@@ -1,0 +1,31 @@
+{
+  "name": "api-perfume-group",
+  "version": "1.0.0",
+  "description": "Api Eurodance songs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "music",
+    "90s",
+    "00s",
+    "disco",
+    "dance",
+    "europe",
+    "pop"
+  ],
+  "author": "Misty/Christine Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
