@@ -7,7 +7,7 @@ const schema = new Schema({
   group: { type: String, required: true },
   year: { type: Number, required: true },
   image: { type: String, unique: true, required: true },
-  info: [{ type: Schema.Types.ObjectId, ref: "infogroup", required: true }],
+  info: [{ type: Schema.Types.ObjectId, ref: 'infogroup' }],
 });
 
 module.exports = mongoose.model("eurodance", schema);

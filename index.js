@@ -2,10 +2,10 @@
 const express = require("express");
 const cors = require("cors");
 // Routes
-const EuroDanceRoutes = require("./api/eurodance/eurodance.routes");
-const infoRoutes = require("./api/infogroup/infogroup.routes");
+const EuroDanceRoutes = require("./src/api/eurodance/eurodance.routes");
+const infoRoutes = require("./src/api/infogroup/infogroup.routes");
 // DB
-const { connectDb } = require("./helpers/db");
+const { connectDb } = require("./src/helpers/db");
 // Port
 const PORT = process.env.PORT || 8000;
 // inicilizate express

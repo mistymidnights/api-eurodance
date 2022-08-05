@@ -3,11 +3,11 @@ const { setError } = require("../../helpers/utils");
 
 const getAll = async (req, res, next) => {
   try {
-    const songs = await Eurodance.find();
+    const songs = await Eurodance.find().populate('info');
     return res.json({
       status: 200,
       message: "Recovered all groups",
-      data: { elements: songs },
+      data: {  songs },
     });
   } catch (error) {
     return next(setError(500, "Failed all codes"));
@@ -22,7 +22,7 @@ const getById = async (req, res, next) => {
     return res.json({
       status: 200,
       message: "Recovered all group",
-      data: { element: song },
+      data: { song },
     });
   } catch (error) {
     return next(setError(500, "Failed groups"));

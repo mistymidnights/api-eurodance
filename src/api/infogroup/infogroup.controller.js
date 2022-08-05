@@ -7,7 +7,7 @@ const getAllInfo = async (req, res, next) => {
     return res.json({
       status: 200,
       message: "Recovered all elements",
-      data: { elements: infos },
+      data: { infos },
     });
   } catch (error) {
     return next(setError(500, "Failed all codes"));
@@ -22,7 +22,7 @@ const getByIdOfInfo = async (req, res, next) => {
     return res.json({
       status: 200,
       message: "Recovered all elements",
-      data: { element: info },
+      data: { info },
     });
   } catch (error) {
     return next(setError(500, "Failed element"));
